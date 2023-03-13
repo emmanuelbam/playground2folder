@@ -21,16 +21,18 @@
                 <img class="front-card-img" src="interactive-card-details-form-main/images/bg-card-front.png">
                 <img class="front-card-logo" src="interactive-card-details-form-main/images/card-logo.svg"></div>
 
-                <p class="card-number-display">1652 6784 0087 0000</p>
-                <p class="cardholder-name-display">Jena Lane</p>
-                <p class="expiry-month-display">09/</p>
-                <p class="expiry-year-display">00</p>
+                <p id="card-no-display"  class="card-number-display">1652 6784 0087 0000</p>
+
+                <p id="card-name-diplay" class="cardholder-name-display">Jena Lane</p>
+
+                <p id="expiry-month" class="expiry-month-display">09/</p>
+                <p id="expiry-year" class="expiry-year-display">00</p>
             </div>
 
             <div class="card-back">
                 <img src="interactive-card-details-form-main/images/bg-card-back.png" alt="" class="back-card-img">
                 
-                <p class="cvc-display">000</p>
+                <p id="cvc" class="cvc-display">000</p>
 
             </div>
 
@@ -39,20 +41,22 @@
       <section class="card-details"></section>
         <form>
             <label for="name">CARDHOLDER NAME</label>
-            <input id="cardholder-name" class="cardholder-name" placeholder="Jena Lane" type="text" name="cardholder-name">
+            <input id="cardholder-name" class="cardholder-name-cla" placeholder="Jena Lane" type="text" name="cardholder-name" onchange="myFunction()">
 
-            <label for="card-no">CARD NUMBER</label>
-            <input id="card-no" class="card-no" placeholder="1652 6784 0087 0000" type="number" name="card-no">
+            <label for="card-no-label">CARD NUMBER</label>
+            <input id="card-no" class="card-no-cla" placeholder="1652 6784 0087 0000" type="text" name="card-no">
 
             <div class="flex">
                <label class="expiry-date" for="expiry-date">Exp . Date (MM/YY)</label>
 
-               <input class="expiry-date" type="text" name="expiry-date" placeholder="MM">
-               <input class="expiry-date" type="text" name="expiry-date" placeholder="YY">
+               <input id="month" class="expiry-date" type="text" name="expiry-date" placeholder="MM">
+
+               <input id="year" class="expiry-date" type="text" name="expiry-date" placeholder="YY">
+
                 <label for="cvc" class="cvc">CVC</label>
-                <input class="cvc" type="text" name="cvc" placeholder="000">
+                <input id="cvc-inp" class="cvc" type="text" name="cvc" placeholder="000">
             </div>
-             <button type="submit" class="confirm-btn">Confirm</button>
+             <button id="btn-confirm" type="submit" class="confirm-btn">Confirm</button>
         </form>
     </main>
     <script src="playground2.js"></script>
