@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="playground2.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Space+Grotesk">
-    <title>Document</title>
+    <title>interactive-card-details-form-main</title>
 </head>
 <body>
     <nav>
@@ -23,7 +23,8 @@
 
                 <p id="card-no-display"  class="card-number-display">1652 6784 0087 0000</p>
 
-                <p id="card-name-diplay" class="cardholder-name-display">Jena Lane</p>
+                <p id="card-name-display" class="cardholder-name-display">Jane Lane
+                </p>
 
                 <p id="expiry-month" class="expiry-month-display">09/</p>
                 <p id="expiry-year" class="expiry-year-display">00</p>
@@ -41,10 +42,10 @@
       <section class="card-details"></section>
         <form>
             <label for="name">CARDHOLDER NAME</label>
-            <input id="cardholder-name" class="cardholder-name-cla" placeholder="Jena Lane" type="text" name="cardholder-name" onchange="myFunction()">
+            <input id="cardholder-name" class="cardholder-name-cla" placeholder="Jena Lane" type="text" name="cardholder-name1"  value="" required>
 
             <label for="card-no-label">CARD NUMBER</label>
-            <input id="card-no" class="card-no-cla" placeholder="1652 6784 0087 0000" type="text" name="card-no">
+            <input id="card-no" class="card-no-cla" placeholder="1652 6784 0087 0000" type="text" name="card-no" value="" required>
 
             <div class="flex">
                <label class="expiry-date" for="expiry-date">Exp . Date (MM/YY)</label>
@@ -56,7 +57,7 @@
                 <label for="cvc" class="cvc">CVC</label>
                 <input id="cvc-inp" class="cvc" type="text" name="cvc" placeholder="000">
             </div>
-             <button id="btn-confirm" type="submit" class="confirm-btn">Confirm</button>
+             <button id="btn-confirm" type="button" class="confirm-btn">Confirm</button>
         </form>
     </main>
     <script src="playground2.js"></script>

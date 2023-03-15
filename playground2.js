@@ -1,7 +1,7 @@
 const cardNoDisplay =document.getElementById("card-no-display")
 const cardNo =document.getElementById("card-no")
 
-const cardNameDisplay =document.getElementById("card-name-display")
+const cardNameDisplay =document.querySelector("#card-name-display")
 const cardholderName =document.getElementById("cardholder-name")
 
 const expiryMonth =document.getElementById("expiry-month")
@@ -16,7 +16,21 @@ const cvcInp =document.getElementById("cvc-inp")
 const btnConfirm =document.getElementById("btn-confirm")
 
 
-function myFunction() {
-    let x =document.getElementById("cardholder-name").value
-    document.getElementById("card-name-diplay").innerHTML = x;
+
+
+
+cardholderName.addEventListener("keypress",(e)=>{
+   document.getElementById("card-name-display").textContent  = e.target.value
+    if(checkVals(e)){
+
+    }
+})
+
+cardNo.addEventListener("keypress",(e)=>{
+ 
+    document.getElementById("card-no-display").textContent = e.target.value
+})
+
+const checkVals = (e) => {
+    return (e.target.value.match(/[A-Za-z]/i  ));
 }
