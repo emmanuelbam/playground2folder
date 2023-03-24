@@ -42,22 +42,35 @@
       <section class="card-details"></section>
         <form>
             <label for="name">CARDHOLDER NAME</label>
-            <input id="cardholder-name" class="cardholder-name-cla" placeholder="Jena Lane" type="text" name="cardholder-name1"  value="" required>
+            <input id="cardholder-name" class="cardholder-name-cla" placeholder="Jena Lane" type="text" name="cardholder-name1"  value="" maxlength="19" required>
 
             <label for="card-no-label">CARD NUMBER</label>
-            <input id="card-no" class="card-no-cla" placeholder="1652 6784 0087 0000" type="text" name="card-no" value="" required>
+            <input id="card-no" class="card-no-cla" placeholder="1652 6784 0087 0000" type="text" name="card-no" value="" maxlength="16" required>
 
             <div class="flex">
                <label class="expiry-date" for="expiry-date">Exp . Date (MM/YY)</label>
 
-               <input id="month" class="expiry-date" type="month" name="expiry-date" placeholder="MM" min="0" max="12">
+               <input id="month" class="expiry-date" type="month" name="expiry-date" placeholder="MM" >
 
                <input id="year" class="expiry-date" type="year" name="expiry-date" placeholder="YY">
 
                 <label for="cvc" class="cvc">CVC</label>
-                <input id="cvc-inp" class="cvc" type="text" name="cvc" placeholder="000">
+                <input id="cvc-inp" class="cvc" type="text" name="cvc" placeholder="000" maxlength="3">
             </div>
              <button id="btn-confirm" type="button" class="confirm-btn">Confirm</button>
+
+             <div id="greet-section" hidden>
+
+                <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+
+                <h3>Thank you!</h3>
+
+                <p>We've added your card details</p>
+
+                <button type="submit">Continue</button>
+
+             </div>
+
         </form>
     </main>
     <script src="playground2.js"></script>

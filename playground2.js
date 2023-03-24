@@ -15,6 +15,8 @@ const cvcInp =document.getElementById("cvc-inp")
 
 const btnConfirm =document.getElementById("btn-confirm")
 
+const greetSection =document.getElementById("greet-section")
+
 var regName = /^[a-zA-Z]/
 var regNumber = /^[0-9]/
 
@@ -51,3 +53,30 @@ cardNo.addEventListener("keypress",(e)=>{
 console.log(userno);
 })
 
+month.addEventListener("keypress",(e)=>{
+
+  document.getElementById("month")
+
+  document.getElementById("expiry-month").textContent = e.target.value
+
+})
+
+
+
+cvcInp.addEventListener("keypress",(e)=>{
+
+  document.getElementById("cvc-inp")
+
+  document.getElementById("cvc").textContent = e.target.value
+  
+})
+
+btnConfirm.addEventListener("onclick",()=>{
+  debugger
+  if (cardholderName.value == "" && cardNo.value == "" && month.value == "" && cvcInp.value == "") {
+     document.getElementById("greet-section").style.display ="block"
+  } else {
+    alert("Input your deatils")
+  }
+  
+})
