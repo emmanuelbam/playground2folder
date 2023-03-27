@@ -94,3 +94,46 @@ label{
     display: block;
     padding: 7px;
 }
+.cardholder-name-cla{
+    border-radius: 5px;
+    padding: 6px 15px;
+}
+.cardholder-name-cla:hover{
+    border-color: hsl(278, 68%, 11%)
+    ;
+    cursor: pointer;
+}
+.card-no-cla{
+    border-radius: 5px;
+    padding: 6px 15px;
+}
+.card-no-cla:hover{
+    border-color: hsl(278, 68%, 11%)
+    ;
+    cursor: pointer;
+}
+.confirm-btn{
+    color: white;
+    padding: 6px 15px;
+    margin-top: 2px;
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 5px;
+    border: none;
+}
+.sub-flex{
+    display: flex;
+    /* display: inline-block; */
+    
+}
+.expiry-date{
+    /* padding: 3px -9px; */
+    margin-left: 3px;
+    width: 100px;
+}
+.cvc{
+    width: 100px;
+}
+.greet-section{
+    margin-left: 60%;
+    margin-top: -8%;
+}
