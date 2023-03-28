@@ -32,7 +32,7 @@ cardholderName.addEventListener("keypress",(e)=>{
 
    } else {
      user2="Wrong format,letter only"
-    user2.style.border = " hsl(0, 100%, 66%) solid 5px";
+    user2.style.border = " red solid 5px";
    }
 })
  
@@ -74,23 +74,20 @@ cvcInp.addEventListener("keypress",(e)=>{
 
 function myFunction() {
    if (cardholderName.value != "" && cardNo.value != "" && month.value != "" && cvcInp.value != "") {
-     document.getElementById("greet-section").style.visibility = "visible"
 
-     document.getElementById
-     ("card-details-form").style.visibility = "hidden"
+     document.getElementById("greet-section").style.visibility = "visible";
 
   } else {
-    alert("Input your deatils")
+    alert("Input your deatils");
+} 
 } 
 
-} 
-
-btnConfirm.addEventListener("onclick",()=>{
+// btnConfirm.addEventListener("onclick",()=>{
   
  
-  // } if (cardholderName.value == "" && cardNo.value == "" && month.value == "" && cvcInp.value == "") {
-  //    document.getElementById("greet-section").style.display ="block"
-  // } else {
-  //   alert("Input your deatils")
+//   // } if (cardholderName.value == "" && cardNo.value == "" && month.value == "" && cvcInp.value == "") {
+//   //    document.getElementById("greet-section").style.display ="block"
+//   // } else {
+//   //   alert("Input your deatils")
   
-})
+// })

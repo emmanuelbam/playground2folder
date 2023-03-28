@@ -115,25 +115,76 @@ label{
 .confirm-btn{
     color: white;
     padding: 6px 15px;
-    margin-top: 2px;
+    margin-top: 9px;
     background-color: hsl(278, 68%, 11%);
     border-radius: 5px;
     border: none;
 }
+.last-flex{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
 .sub-flex{
     display: flex;
+    flex-direction: column;
     /* display: inline-block; */
     
 }
-.expiry-date{
-    /* padding: 3px -9px; */
-    margin-left: 3px;
+.expiry-date-inp{
     width: 100px;
+    height: 29px;
+    border-radius: 5px;
+}
+.expiry-date-inp:hover{
+    border-color: hsl(278, 68%, 11%)
+    ;
+    cursor: pointer;
+}
+.cvc-div{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 20px;
+  
 }
 .cvc{
     width: 100px;
+    border-radius: 5px;
+    padding: 6px;
+    /* margin-bottom: 9px; */
+}
+.cvc:hover{
+    border-color: hsl(278, 68%, 11%)
+    ;
+    cursor: pointer;
 }
 .greet-section{
     margin-left: 60%;
     margin-top: -8%;
+}
+.check-circle{
+    margin-left: 79px;
+}
+.submit-btn{
+    color: white;
+    padding: 6px 100px;
+     background-color: hsl(278, 68%, 11%);
+     border-radius: 5px;
+     border: none;
+     margin-top: 30px;
+}
+.greet-h3{
+    font-family: sans-serif, monospace;
+    font-size: 18px;
+    margin-left: 65px;
+    padding: 9px;
+    color: hsl(278, 68%, 11%);
+}
+.greet-p-tag{
+    color: rgb(143, 141, 137);
+    font-family: sans-serif, monospace;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 39px;
 }

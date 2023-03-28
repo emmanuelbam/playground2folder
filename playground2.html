@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,74 +9,91 @@
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Space+Grotesk">
     <title>interactive-card-details-form-main</title>
 </head>
+
 <body>
     <nav>
-        <img class="nav-background" src="interactive-card-details-form-main/images/bg-main-desktop.png" alt="nav background">
+        <img class="nav-background" src="interactive-card-details-form-main/images/bg-main-desktop.png"
+            alt="nav background">
     </nav>
     <main>
-       <div class="contanier">
-           <section class="card-display">
+        <div class="contanier">
+            <section class="card-display">
 
-            <div class="card-front">
                 <div class="card-front">
-                <img class="front-card-img" src="interactive-card-details-form-main/images/bg-card-front.png">
-                <img class="front-card-logo" src="interactive-card-details-form-main/images/card-logo.svg"></div>
+                    <div class="card-front">
+                        <img class="front-card-img" src="interactive-card-details-form-main/images/bg-card-front.png">
+                        <img class="front-card-logo" src="interactive-card-details-form-main/images/card-logo.svg">
+                    </div>
 
-                <p id="card-no-display"  class="card-number-display">1652 6784 0087 0000</p>
+                    <p id="card-no-display" class="card-number-display">9591 6489 6389 101E</p>
 
-                <p id="card-name-display" class="cardholder-name-display">Jane Lane
-                </p>
+                    <p id="card-name-display" class="cardholder-name-display">Jane Lane
+                    </p>
 
-                <p id="expiry-month" class="expiry-month-display">09/</p>
-                <p id="expiry-year" class="expiry-year-display">00</p>
-            </div>
+                    <p id="expiry-month" class="expiry-month-display">09/</p>
+                    <p id="expiry-year" class="expiry-year-display">00</p>
+                </div>
 
-            <div class="card-back">
-                <img src="interactive-card-details-form-main/images/bg-card-back.png" alt="" class="back-card-img">
-                
-                <p id="cvc" class="cvc-display">000</p>
+                <div class="card-back">
+                    <img src="interactive-card-details-form-main/images/bg-card-back.png" alt="" class="back-card-img">
 
-            </div>
+                    <p id="cvc" class="cvc-display">000</p>
 
-           </section>
-       </div>
-      <section class="card-details"></section>
-        <form >
+                </div>
+
+            </section>
+        </div>
+        <section class="card-details"></section>
+        <form>
             <label for="name">CARDHOLDER NAME</label>
-            <input id="cardholder-name" class="cardholder-name-cla" placeholder="Jena Lane" type="text" name="cardholder-name1"  value="" maxlength="19" required>
+            <input id="cardholder-name" class="cardholder-name-cla" placeholder="Jena Lane" type="text"
+                name="cardholder-name1" value="" maxlength="19" required>
 
             <label for="card-no-label">CARD NUMBER</label>
-            <input id="card-no" class="card-no-cla" placeholder="1652 6784 0087 0000" type="text" name="card-no" value="" maxlength="16" required>
+            <input id="card-no" class="card-no-cla" placeholder="9591 6489 6389 101E" type="text" name="card-no"
+                value="" maxlength="16" required>
 
-            <div class="flex">
-               <label class="expiry-date" for="expiry-date">Exp . Date (MM/YY)</label>
+            <div class="last-flex">
+                <div class="sub-flex">
+                    <label class="expiry-date" for="expiry-date">Exp . Date (MM/YY)</label>
 
-             <div class="sub-flex">
-                
-               <input id="month" class="expiry-date" type="month" name="expiry-date" placeholder="MM" >
 
-               <!-- <input id="year" class="expiry-date" type="year" name="expiry-date" placeholder="YY"> -->
-
-                <label for="cvc" class="cvc">CVC</label>
-                <input id="cvc-inp" class="cvc" type="text" name="cvc" placeholder="000" maxlength="3">
+                    <input id="month" class="expiry-date-inp" type="month" name="expiry-date" 
+                    placeholder="MM">
                 </div>
-            </div>
-             <button onclick="myFunction()"  id="btn-confirm" type="button" class="confirm-btn">Confirm</button>
-
-             
-            </form>
-            <div class="greet-section" id="greet-section" hidden>
-
-               <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
-
-               <h3>Thank you!</h3>
-
-               <p>We've added your card details</p>
-
-               <button type="submit">Continue</button>
+                <!-- <input id="year" class="expiry-date" type="year" name="expiry-date" placeholder="YY"> -->
+                <div class="cvc-div">
+                    <label for="cvc" class="cvc-lab">CVC</label>
+                    <input id="cvc-inp" class="cvc" type="text" name="cvc" placeholder="000" maxlength="3">
+                </div>
 
             </div>
+            <button onclick="myFunction()" id="btn-confirm" type="button" class="confirm-btn">Confirm</button>
+
+
+        </form>
+        <div class="greet-section" id="greet-section" hidden>
+
+            <svg class="check-circle" width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="40" r="40" fill="url(#a)" />
+                <path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3" />
+                <defs>
+                    <linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6348FE" />
+                        <stop offset="1" stop-color="#610595" />
+                    </linearGradient>
+                </defs>
+            </svg>
+
+            <h3 class="greet-h3">THANK YOU!</h3>
+
+            <p class="greet-p-tag">We've added your card details</p>
+
+            <button class="submit-btn" type="submit">Continue</button>
+
+        </div>
     </main>
     <script src="playground2.js"></script>
 </body>
+
 </html>
