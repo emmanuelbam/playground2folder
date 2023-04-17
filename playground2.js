@@ -61,7 +61,7 @@ month.addEventListener("keypress",(e)=>{
   document.getElementById("expiry-month").textContent = e.target.value
    
 })
-
+t
 
 
 cvcInp.addEventListener("keypress",(e)=>{
@@ -71,7 +71,7 @@ cvcInp.addEventListener("keypress",(e)=>{
   document.getElementById("cvc").textContent = e.target.value
   
 })
-
+ 
 function myFunction() {
    if (cardholderName.value != "" && cardNo.value != "" && month.value != "" && cvcInp.value != "") {
 
