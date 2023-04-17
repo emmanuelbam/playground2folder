@@ -29,9 +29,9 @@
 
                     <p id="card-name-display" class="cardholder-name-display">Jane Lane
                     </p>
-
-                    <p id="expiry-month" class="expiry-month-display">09/</p>
-                    <p id="expiry-year" class="expiry-year-display">00</p>
+                       
+                    <p id="expiry-month" class="expiry-month-display"></p>
+                    
                 </div>
 
                 <div class="card-back">
@@ -41,10 +41,10 @@
 
                 </div>
 
-            </section>
+            </section> 
         </div>
         <section class="card-details"></section>
-        <form>
+        <form id="form-input">
             <label for="name">CARDHOLDER NAME</label>
             <input id="cardholder-name" class="cardholder-name-cla" placeholder="Jena Lane" type="text"
                 name="cardholder-name1" value="" maxlength="19" required>
@@ -58,10 +58,11 @@
                     <label class="expiry-date" for="expiry-date">Exp . Date (MM/YY)</label>
 
 
-                    <input id="month" class="expiry-date-inp" type="month" name="expiry-date" 
+                    <input id="month" class="expiry-date-inp" type="date" name="expiry-date" 
                     placeholder="MM">
                 </div>
                 <!-- <input id="year" class="expiry-date" type="year" name="expiry-date" placeholder="YY"> -->
+
                 <div class="cvc-div">
                     <label for="cvc" class="cvc-lab">CVC</label>
                     <input id="cvc-inp" class="cvc" type="text" name="cvc" placeholder="000" maxlength="3">
@@ -72,7 +73,7 @@
 
 
         </form>
-        <div class="greet-section" id="greet-section" hidden>
+        <div class="greet-section" id="greet-section" style="display: none;" >
 
             <svg class="check-circle" width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="40" cy="40" r="40" fill="url(#a)" />
@@ -89,7 +90,7 @@
 
             <p class="greet-p-tag">We've added your card details</p>
 
-            <button class="submit-btn" type="submit">Continue</button>
+            <button onclick="myContinue()" class="submit-btn" type="submit">Continue</button>
 
         </div>
     </main>

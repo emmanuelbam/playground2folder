@@ -59,7 +59,7 @@ month.addEventListener("keypress",(e)=>{
   document.getElementById("month")
 
   document.getElementById("expiry-month").textContent = e.target.value
-
+   
 })
 
 
@@ -75,12 +75,23 @@ cvcInp.addEventListener("keypress",(e)=>{
 function myFunction() {
    if (cardholderName.value != "" && cardNo.value != "" && month.value != "" && cvcInp.value != "") {
 
-     document.getElementById("greet-section").style.visibility = "visible";
+     document.getElementById("greet-section").style.display = "block";
+
+     document.getElementById("form-input").style.display= "none";
 
   } else {
     alert("Input your deatils");
 } 
 } 
+
+function myContinue() {
+  document.getElementById("form-input").style.display = "block";
+
+  document.getElementById("greet-section").style.display = "none";
+}
+
+
+
 
 // btnConfirm.addEventListener("onclick",()=>{
   
