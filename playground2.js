@@ -22,7 +22,7 @@ var regNumber = /^[0-9]/
 
 
 
-cardholderName.addEventListener("keypress",(e)=>{
+cardholderName.addEventListener("keyup",(e)=>{
   var user2 = document.getElementById("cardholder-name");
 
   var user = document.getElementById("card-name-display").textContent  = e.target.value
@@ -54,17 +54,24 @@ cardNo.addEventListener("keypress",(e)=>{
 console.log(userno);
 })
 
-month.addEventListener("keypress",(e)=>{
+month.addEventListener("change",(e)=>{
 
   document.getElementById("month")
 
-  document.getElementById("expiry-month").textContent = e.target.value
+  let expDate = new Date(e.target.value);
+  let expMonth = expDate.getMonth();
+  let prefix = ""
+  if(expMonth <10){
+    prefix="0";
+  }
+  let expYear = expDate.getFullYear(); 
+  document.getElementById("expiry-month").textContent = `${prefix}${expMonth}/${expYear.toString().slice(-2)}`; 
    
 })
-t
 
 
-cvcInp.addEventListener("keypress",(e)=>{
+
+cvcInp.addEventListener("keyup",(e)=>{
 
   document.getElementById("cvc-inp")
 
